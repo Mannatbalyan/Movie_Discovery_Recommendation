@@ -1,0 +1,110 @@
+.compare-page {
+  min-height: 80vh;
+  padding: 40px 6%;
+  text-align: center;
+}
+
+.compare-page h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.compare-subtitle {
+  color: #aaa;
+  margin-bottom: 35px;
+}
+
+.compare-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.compare-card {
+  width: 320px;
+  padding: 20px;
+  background: #1c1c2b;
+  border-radius: 15px;
+  text-align: left;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.compare-card.winner {
+  border-color: #22c55e;
+}
+
+.winner-badge {
+  display: block;
+  background: #22c55e;
+  color: #111;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.compare-poster {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.compare-card h2 {
+  margin: 18px 0;
+  font-size: 22px;
+}
+
+.compare-details p {
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.remove-btn,
+.clear-btn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  width: 100%;
+}
+
+.clear-btn {
+  background: #6c63ff;
+  color: white;
+  margin-top: 30px;
+}
+
+.compare-empty,
+.compare-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+@media (max-width: 600px) {
+
+  .compare-page h1 {
+    font-size: 27px;
+  }
+
+  .compare-card {
+    width: 100%;
+  }
+
+  .compare-poster {
+    height: 350px;
+  }
+
+}
