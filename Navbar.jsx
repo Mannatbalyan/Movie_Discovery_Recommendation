@@ -49,9 +49,21 @@ const Navbar = () => {
         <li className={location.pathname === "/" ? "active" : ""}>
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         </li>
+
+        
         <li className={location.pathname === "/movies" ? "active" : ""}>
           <Link to="/movies" onClick={() => setMenuOpen(false)}>Movies</Link>
         </li>
+<li>
+  <Link
+    to="/movies#comparison"
+    onClick={() => setMenuOpen(false)}
+  >
+    Compare Movies
+  </Link>
+</li>
+        
+        
         <li className={location.pathname === "/tvshows" ? "active" : ""}>
           <Link to="/tvshows" onClick={() => setMenuOpen(false)}>TV Shows</Link>
         </li>
